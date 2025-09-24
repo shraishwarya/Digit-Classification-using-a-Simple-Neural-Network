@@ -1,0 +1,114 @@
+# 🧠 Digit Classification using a Simple Neural Network
+
+This project implements a **simple neural network** from scratch (or using a deep learning framework) to classify handwritten digits from the **MNIST dataset**. The goal is to demonstrate the fundamentals of neural networks and how they can be applied to image classification.
+
+---
+
+## 📌 Features
+
+* Uses the **MNIST dataset** (28x28 grayscale images, 0–9 digits).
+* Implements a **fully connected feedforward neural network**.
+* Supports **training, validation, and testing**.
+* Visualizes **accuracy and loss curves**.
+* Evaluates **model performance** on unseen data.
+
+---
+
+## 📂 Project Structure
+
+```
+├── data/                 # MNIST dataset (downloaded automatically or stored here)
+├── notebooks/            # Jupyter notebooks for experiments
+├── src/                  # Source code
+│   ├── model.py          # Neural network architecture
+│   ├── train.py          # Training loop
+│   ├── evaluate.py       # Testing and evaluation
+│   └── utils.py          # Helper functions
+├── results/              # Saved models and training logs
+├── requirements.txt      # Python dependencies
+└── README.md             # Project documentation
+```
+
+---
+
+## 🚀 Getting Started
+
+### 1️⃣ Clone the Repository
+
+```bash
+git clone https://github.com/your-username/digit-classification-nn.git
+cd digit-classification-nn
+```
+
+### 2️⃣ Install Dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+### 3️⃣ Run Training
+
+```bash
+python src/train.py --epochs 10 --batch_size 32
+```
+
+### 4️⃣ Evaluate Model
+
+```bash
+python src/evaluate.py --model results/model.pth
+```
+
+---
+
+## 📊 Results
+
+* Achieved **\~95% accuracy** on the MNIST test set using a simple neural network.
+* Loss decreases steadily across epochs.
+
+**Sample Predictions:**
+
+| Input Digit | Predicted | Correct |
+| ----------- | --------- | ------- |
+| 7           | 7         | ✅       |
+| 2           | 2         | ✅       |
+| 9           | 4         | ❌       |
+
+(Include prediction images and accuracy/loss plots here)
+
+---
+
+## 🛠️ Tech Stack
+
+* **Language:** Python
+* **Libraries:** NumPy, PyTorch / TensorFlow, Matplotlib
+* **Dataset:** [MNIST](http://yann.lecun.com/exdb/mnist/)
+
+---
+
+## 📌 Applications
+
+* Handwritten digit recognition (bank checks, postal codes, etc.)
+* Foundation for learning **deep learning and neural networks**
+* Can be extended to **CNNs** for higher accuracy
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome!
+
+1. Fork the repo
+2. Create your branch (`git checkout -b feature-name`)
+3. Commit your changes (`git commit -m 'Add feature'`)
+4. Push to branch (`git push origin feature-name`)
+5. Open a Pull Request
+
+---
+
+
+## 🙌 Acknowledgements
+
+* [Yann LeCun’s MNIST Dataset](http://yann.lecun.com/exdb/mnist/)
+* [PyTorch](https://pytorch.org/) / [TensorFlow](https://www.tensorflow.org/)
+
+---
